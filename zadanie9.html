@@ -1,0 +1,26 @@
+<html>
+    <body>
+            <div style="color:green;font-size:36px;">
+             <script lang="JavaScript">
+                 
+                var D2_Pyk=prompt("D2=","");
+                var G2_Pyk=prompt("G2=","");
+                var D1_Pyk=prompt("D1=","");
+                var G1_Pyk=prompt("G1=","");
+
+
+                var ilesek;
+
+                var D2=parseFloat(D2_Pyk);
+                var G2=parseFloat(G2_Pyk);
+                var D1=parseFloat(D1_Pyk);
+                var G1=parseFloat(G1_Pyk);
+
+
+                
+                 ilesek=((D1-D2)*86400)+((G1-G2)*3600);
+                 document.write("Od dnia "+D2+" i godziny "+G2+" do dnia "+D1+" i godziny "+G1+" mija "+ilesek+" sekund");
+            </script>
+            </div>
+    </body>
+</html>
