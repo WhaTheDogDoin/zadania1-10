@@ -1,0 +1,30 @@
+<html>
+    <body>
+            <div style="color:rgb(5, 12, 105);font-size:36px;">
+             <script lang="JavaScript">
+                
+                var a1_pyk=prompt("Podaj pierwszą liczbe A=","");
+                var a2_pyk=prompt("Podaj drugą liczbę B=","");
+
+                var suma;
+
+                var a=parseFloat(a1_pyk);
+                var b=parseFloat(a2_pyk);
+
+                 document.write("wczytane liczby: A= "+a+" B= "+b+"<br>");
+                
+                 document.write("wzór: ("+a+" + "+b+")^3= "+a+"^3 + (3(("+a+")^2)*("+b+")) + 3("+a+")*(("+b+")^2) + "+b+"^3 <br>");
+
+                suma=((a^3)+(3*(a^2)*b)+((3*a)*(b^2))+(b^3));
+                
+
+
+
+
+                document.write("Wynik to: "+suma+"");
+
+
+            </script>
+            </div>
+    </body>
+</html>
