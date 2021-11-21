@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>
+Obliczenia Pola i Obwodu prostokąta
+</title>
+<script language="JavaScript">
+function pole_pykacz(a_pyk,b_pyk)
+{
+a_pykacz=parseFloat(a_pyk)
+b_pykacz=parseFloat(b_pyk)
+Po_wynik_pykacz=a_pykacz*b_pykacz
+document.getElementsByName('obj')[0].value=Po_wynik_pykacz.toFixed(2);
+alert("P="+Po_wynik_pykacz.toFixed(2)+" cm^2");
+pokaz1.innerHTML="P="+Po_wynik_pykacz.toFixed(2)+" cm^2"+"<br>";
+}
+function obwud_pykacz(a_pyk,b_pyk)
+{
+a_pykacz=parseFloat(a_pyk)
+b_pykacz=parseFloat(b_pyk)
+ob_wynik_pykacz=(2*a_pykacz)+(2*b_pykacz)
+document.getElementsByName('pole')[0].value=ob_wynik_pykacz.toFixed(2);
+alert("Obw="+ob_wynik_pykacz.toFixed(2)+" cm");
+pokaz2.innerHTML="Obw="+ob_wynik_pykacz.toFixed(2)+"cm";
+}
+</script>
+</head>
+<body>
+Obliczenia Pola i Obwodu prostokąta
+<br> <br>
+<form name="formularz" action="..." onsubmit="pole_pykacz(this.promien.value,this.wysokosc.value); obwud_pykacz(this.promien.value,this.wysokosc.value);return false">
+Podaj a=
+<input size="6" name="promien">
+Podaj b=
+<input size="6" name="wysokosc">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+Pole=
+<input size="6" name="obj">
+obwód=
+<input size="6" name="pole">
+</form>
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+</table>
+</body>
+</html>

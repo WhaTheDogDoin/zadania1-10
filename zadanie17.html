@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+ <head> 
+<title> Użycie fukcji </title> 
+ <meta charset="utf-8"> 
+ </head> 
+<body>
+
+ <div style="color:green;font-size:48px;">
+ 
+ <script language="JavaScript">
+ 
+ var a=parseFloat(prompt("a=",""));
+ var b=parseFloat(prompt("b=",""));
+ function suma_pyk(a, b) {
+ return a + b;
+ }
+ 
+ function odejmowanie_pyk(a, b){
+ return a - b;
+  }
+  
+ function mnozenie_pyk(a, b){
+ return a * b;
+  }
+  
+ function potengowanie_pyk(a, b){
+ return Math.pow(a,b);
+  }
+  
+ function reszta_z_dzielenia_pyk(a, b){
+ return a % b;
+  }
+  
+ document.write("suma="+suma_pyk(a,b)+"<br>");
+ document.write("odejmowanie="+odejmowanie_pyk(a,b)+"<br>");
+ document.write("mnozenie="+mnozenie_pyk(a,b)+"<br>");
+ document.write("potengowanie="+potengowanie_pyk(a,b)+"<br>");
+ document.write("reszta z dzielenia="+reszta_z_dzielenia_pyk(a,b)+"<br>");
+</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>
+Obliczanie odległości od drabiny i kąta
+</title>
+<script language="JavaScript">
+function drabina_kucal(d_pyk,x_pyk)
+{
+d_pykacz=parseFloat(d_pyk)
+x_pykacz=parseFloat(x_pyk)
+drab_pykacz=Math.sqrt(Math.pow(d_pyk,2)+Math.pow(x_pyk,2))
+document.getElementsByName('drab')[0].value=drab_pykacz.toFixed(2);
+alert("Długość drabiny="+drab_pykacz.toFixed(2));
+pokaz1.innerHTML="Długość drabiny="+drab_pykacz.toFixed(2)+"<br>";
+}
+function kont_kucal(d_pyk,x_pyk)
+{
+d_pykacz=parseFloat(d_pyk)
+x_pykacz=parseFloat(x_pyk)
+tan=d_pykacz/x_pykacz
+kont_wynik_pykacz=Math.atan(tan)*180/Math.PI
+document.getElementsByName('kat')[0].value=kont_wynik_pykacz.toFixed(2);
+alert("Alfa="+kont_wynik_pykacz.toFixed(2));
+pokaz2.innerHTML="Alfa="+kont_wynik_pykacz.toFixed(2);
+}
+</script>
+</head>
+<body>
+Obliczanie odległości od drabiny i kąta
+<br><br>
+<form name="formularz" action="..." onsubmit="drabina_pykacz(this.wysokosc.value,this.odleglosc.value); kont_pykacz(this.wysokosc.value,this.odleglosc.value);return false">
+Podaj d=
+<input size="6" name="wysokosc">
+Podaj x=
+<input size="6" name="odleglosc">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+Drabiny=
+<input size="6" name="drab">
+Alfa=
+<input size="6" name="kat">
+</form>
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+</table>
+</body>
+</html>
